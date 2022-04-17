@@ -6,11 +6,22 @@
   </head>
   <body>
     <h1>Reminders</h1>
+    <button type="button" onclick="test()">Test</button>
    <div id="reminders">
      <div class = 'reminder'>
-       
+
      </div>
    </div>
   </body>
 </html>
-        
+<script src="//http:ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="script.js">
+  function test(){
+            $.ajax({
+              url: "testFile.py",
+             context: document.body
+            }).done(function() {
+             alert('finished python script');
+            });
+        }
+</script>
