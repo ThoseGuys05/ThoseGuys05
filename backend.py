@@ -5,5 +5,5 @@ class Event:
         self.day = day
         self.time = time
     eventList = []
-
-
+eventlist = []
+eventlist = eventlist.append(Event("Breakfast", ))
